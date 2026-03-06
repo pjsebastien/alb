@@ -224,51 +224,8 @@ fs.writeFileSync(path.join(BASE, 'blog/index.html'), page('../', '../style.css',
 console.log('✓ blog');
 
 // === PERMIS DE CONSTRUIRE ===
-const permisBody = `
-  <section class="page-header"><div class="container"><div class="breadcrumb"><a href="../">Accueil</a> <span>/</span> <a href="../blog/">Blog</a> <span>/</span> <span>Permis de construire</span></div><h1>Comment obtenir un permis de construire à La Réunion ?</h1><p>Guide complet pour votre projet de construction sur l'île</p></div></section>
-
-  <section class="section"><div class="container"><div class="legal-content" style="max-width:900px;">
-    <h2>Qu'est-ce qu'un permis de construire ?</h2>
-    <p>Le permis de construire est un <strong>document administratif</strong> qui permet de vérifier que le projet de construction respecte les règles d'urbanisme en vigueur. Il est délivré par la mairie de la commune où se situe le projet.</p>
-
-    <h2>Les étapes pour obtenir votre permis à La Réunion</h2>
-
-    <h3>1. Trouver un terrain adapté</h3>
-    <p>Consultez le <strong>Plan Local d'Urbanisme (PLU)</strong> à la mairie ou en ligne pour vérifier que votre terrain est constructible et connaître les règles applicables.</p>
-
-    <h3>2. Contacter le service urbanisme</h3>
-    <p>Rapprochez-vous du service urbanisme de votre mairie pour connaître les diagnostics et vérifications nécessaires à votre projet.</p>
-
-    <h3>3. Vérifier les autorisations spécifiques</h3>
-    <p>Dans certains cas, une approbation du département peut être nécessaire, notamment pour les terrains en secteur agricole ou naturel.</p>
-
-    <h2>Quand le permis de construire est-il obligatoire ?</h2>
-    <ul>
-      <li>Dès lors que les travaux dépassent <strong>40 m²</strong> de surface de plancher ou d'emprise au sol</li>
-      <li>Et/ou créent une surface totale supérieure à <strong>20 m²</strong> (garage inclus)</li>
-    </ul>
-
-    <h2>Documents nécessaires (Cerfa 13703*06)</h2>
-    <ul>
-      <li>Plan cadastral du terrain</li>
-      <li>Plan de situation des constructions existantes (carte IGN)</li>
-      <li>Plans du projet (coupes et élévations)</li>
-      <li>Notice descriptive du projet</li>
-      <li>Photos de l'environnement</li>
-    </ul>
-
-    <h2>Faut-il un architecte ?</h2>
-    <p>Le recours à un <strong>architecte est obligatoire</strong> pour les habitations individuelles dont la surface de plancher dépasse <strong>150 m²</strong>. En dessous, un maître d'œuvre peut assurer l'ensemble des démarches.</p>
-    <p>Pour les projets d'agrandissement ou de rénovation, le recours à un maître d'œuvre est généralement suffisant.</p>
-
-    <h2>Faites-vous accompagner par ALB MOE</h2>
-    <p>En tant que maître d'œuvre, ALB MOE vous accompagne dans toutes les étapes de votre projet, de l'idée à la livraison : conception, permis de construire, sélection des entreprises, suivi de chantier et gestion du budget.</p>
-    <p><strong>Première consultation gratuite.</strong></p>
-    <div style="margin-top:2rem;"><a href="../contact/" class="btn btn--primary">Demander un devis gratuit</a></div>
-  </div></div></section>`;
-
-fs.writeFileSync(path.join(BASE, 'permis-de-construire-la-reunion/index.html'), page('../', '../style.css', '../script.js', 'Comment obtenir un permis de construire à La Réunion (974) ? | ALB MOE', 'Guide complet pour obtenir un permis de construire à La Réunion : étapes, documents, règles d\'urbanisme et accompagnement par un maître d\'œuvre.', 'blog', permisBody));
-console.log('✓ permis-de-construire');
+// permis-de-construire-la-reunion/index.html is maintained as a standalone file (interactive quiz, checklist, accordion)
+console.log('⊘ permis-de-construire (standalone, skipped)');
 
 // === MENTIONS LÉGALES ===
 const mentionsBody = `
